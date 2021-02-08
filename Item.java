@@ -16,7 +16,8 @@ public class Item {
 	}
   
 	public void print() {
-		System.out.println();
+        System.out.println();
+        System.out.println(this.toString());
 	}
   
 	public double getPrice() {

@@ -16,7 +16,7 @@ public class WishList {
       
         public void addItem(String title, String description,  double price) {
 
-            Item item = new Item(name, description, price);
+            Item item = new Item(title, description, price);
             if (count >= MAX_ITEMS) {
                 //growArray(items)
                 //System.err.println("Sorry, menu is full!  Can't add item to menu");
@@ -26,7 +26,7 @@ public class WishList {
             }
         }
     
-        public Iterator<Item> createIterator() {
+        public WishListIterator createIterator() {
             return new WishListIterator(items);
         }
         
