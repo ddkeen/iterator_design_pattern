@@ -1,3 +1,7 @@
+/**
+ * Driver for the WishList, Item, and WishListIterator Classes
+ * @author portiaporta
+ */
 public class WishListDriver {
 	public static void main(String[] args) {
 		WishList myWishes = new WishList("Things to get me!");
