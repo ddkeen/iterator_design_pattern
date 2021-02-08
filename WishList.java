@@ -1,5 +1,3 @@
-import java.util.Iterator;
-
 public class WishList {
 
     public static final int MAX_ITEMS = 5;
@@ -10,16 +8,15 @@ public class WishList {
         public WishList(String name) {
             this.name = name;
             items = new Item[MAX_ITEMS];
-     
-            //addItems
         }
       
         public void addItem(String title, String description,  double price) {
 
             Item item = new Item(title, description, price);
-            if (count >= MAX_ITEMS) {
-                //growArray(items)
-                //System.err.println("Sorry, menu is full!  Can't add item to menu");
+            if (count >= items.length) {
+                items = growArray(items);
+                items[count] = item;
+                count++;
             } else {
                 items[count] = item;
                 count++;

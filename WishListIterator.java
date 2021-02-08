@@ -11,7 +11,9 @@ public class WishListIterator implements Iterator {
 	
 	public Item next() {
         Item item = items[position];
-        if(item == null)    return null;
+        if(item == null) {
+            return null;
+        }
 		position++;
 		return item;
 	}
