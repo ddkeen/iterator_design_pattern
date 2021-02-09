@@ -26,14 +26,14 @@ public class WishListIterator implements Iterator {
         if(item == null) {
             return null;
         }
-	position++;
-	return item;
+        position++;
+        return item;
     }
     /**
      * Returns whether there are more items to iterate over in the array
      * @return boolean, true if there are more items, false if there are no more items
      */
     public boolean hasNext() {
-	    return !(position >= items.length || items[position] == null);
+        return !(position >= items.length || items[position] == null);
     }
 }
