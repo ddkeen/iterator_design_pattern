@@ -6,8 +6,8 @@
 public class Item {
     
     private String title;
-	private String description;
-	private double price;
+    private String description;
+    private double price;
  
     /**
      * Item Constructor, sets private instance variables
@@ -25,23 +25,23 @@ public class Item {
      * A string representation of the Item
      * @return String, the string representation
      */
-	public String toString() {
-		return "***** " + title + " *****\n" + description + "\nPrice: $" + price;
+    public String toString() {
+	    return "***** " + title + " *****\n" + description + "\nPrice: $" + price;
     }
     
     /**
      * Prints out the string represenation of the item with proper formatiing
      */
-	public void print() {
+    public void print() {
         System.out.println();
         System.out.println(this.toString());
-	}
+    }
   
     /**
      * Returns the price of the item
      * @return double, the price of the item in dollars and cents
      */
-	public double getPrice() {
-		return price;
-	}
+    public double getPrice() {
+	    return price;
+    }
 }
