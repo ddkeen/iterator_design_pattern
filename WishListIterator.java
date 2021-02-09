@@ -29,6 +29,7 @@ public class WishListIterator implements Iterator {
         position++;
         return item;
     }
+    
     /**
      * Returns whether there are more items to iterate over in the array
      * @return boolean, true if there are more items, false if there are no more items
