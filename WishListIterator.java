@@ -14,7 +14,7 @@ public class WishListIterator implements Iterator {
      * @param items an array of Item objects
      */
     public WishListIterator(Item[] items) {
-	    this.items = items;
+	this.items = items;
     }
     
     /**
