@@ -22,10 +22,10 @@ public class WishListIterator implements Iterator {
      * @return item, the next item. returns null if there is no next item
      */
     public Item next() {
-        Item item = items[position];
-        if(item == null) {
+        if(!hasNext()) {
             return null;
         }
+        Item item = items[position];
         position++;
         return item;
     }

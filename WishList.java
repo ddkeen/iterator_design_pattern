@@ -28,12 +28,9 @@ public class WishList {
         Item item = new Item(title, description, price);
         if (count >= items.length) {
             items = growArray(items);
-            items[count] = item;
-            count++;
-        } else {
-            items[count] = item;
-            count++;
         }
+        items[count] = item;
+        count++;
     }
     
     /**
