@@ -15,11 +15,11 @@ public class Item {
      * @param description a String description of the item
      * @param price a double price of the item in dollars
      */
-public Item(String title, String description, double price) {
-	this.title = title;
-	this.description = description;
-	this.price = price;
-}
+    public Item(String title, String description, double price) {
+	    this.title = title;
+	    this.description = description;
+	    this.price = price;
+    }
   
     /**
      * A string representation of the Item
